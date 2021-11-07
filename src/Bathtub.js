@@ -11,13 +11,13 @@ function Bathtub() {
       clearInterval(timer.current);
       timer.current = setInterval(() => {
         setCount(count => count+1);
-      }, 1000);
+      }, 2000);
     }
     else if(type == 'down'){
       clearInterval(timer.current);
       timer.current = setInterval(() => {
         setCount(count => count - 1);
-      }, 1000);
+      }, 2000);
     }
   }
 
@@ -26,7 +26,7 @@ function Bathtub() {
   }
   
   let indents = [];
-  const myStyle = {'width':'100px', 'height':'50px'};
+  const myStyle = {'width':'100px', 'height':'20px'};
 
   for (let i = 0; i < 5; i++) {
     if(i < 5-count)
